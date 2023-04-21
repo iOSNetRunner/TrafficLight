@@ -47,6 +47,7 @@ final class ViewController: UIViewController {
             redLight.layer.shadowRadius = 50
             redLight.layer.shadowOpacity = 1
             currentSelectedColor = .yellow
+            
         case .yellow:
             redLight.alpha = 0.3
             yellowLight.alpha = 1
@@ -54,6 +55,7 @@ final class ViewController: UIViewController {
             yellowLight.layer.shadowRadius = 50
             yellowLight.layer.shadowOpacity = 1
             currentSelectedColor = .green
+            
         case .green:
             yellowLight.alpha = 0.3
             greenLight.alpha = 1
