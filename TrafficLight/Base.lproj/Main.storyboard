@@ -24,14 +24,20 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4x-l2-5cP">
-                                <rect key="frame" x="140" y="814" width="150" height="44"/>
+                                <rect key="frame" x="140" y="816" width="150" height="42"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="G5g-AU-Ilw"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="START" cornerStyle="medium">
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="IVp-Le-grh"/>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="6L0-ko-6bN"/>
+                                </connections>
                             </button>
                             <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4J-Ll-YH9">
                                 <rect key="frame" x="127" y="323" width="176" height="176"/>
@@ -61,6 +67,12 @@
                             <constraint firstItem="VLt-P5-A5g" firstAttribute="top" secondItem="f4J-Ll-YH9" secondAttribute="bottom" constant="58" id="ylN-qo-Zlm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="VLt-P5-A5g" id="g2l-yw-V4f"/>
+                        <outlet property="redLight" destination="om2-Fb-ubd" id="pQI-Kx-Boy"/>
+                        <outlet property="startButton" destination="t4x-l2-5cP" id="qfA-Bz-Ssp"/>
+                        <outlet property="yellowLight" destination="f4J-Ll-YH9" id="ZN8-Sj-1zB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
